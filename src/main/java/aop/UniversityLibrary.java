@@ -20,10 +20,10 @@ public class UniversityLibrary extends AbstractLibrary {
     }
 
 
-     public void returnBook(){
-        System.out.println("We are returning a book to the University Library ");
-         System.out.println("----------------------------------------------------");
-    }
+//     public void returnBook(){
+//        System.out.println("We are returning a book to the University Library ");
+//         System.out.println("----------------------------------------------------");
+//    }
 
 
     public void getMagazine(){
@@ -47,4 +47,23 @@ public class UniversityLibrary extends AbstractLibrary {
         System.out.println("We are adding a magazine to university library  " );
         System.out.println("----------------------------------------------------");
     }
+
+
+    //Advice @Around
+//    public String returnBook(){
+//        System.out.println("We are returning the book to the University Library ");
+//        return "  Wild Sheep Chase";
+//
+//    }
+
+
+    //Advice type  @Around & working with exceptions
+
+    public String returnBook(){
+        int a=10/0;
+        System.out.println("We are returning the book to the University Library ");
+        return "  Wild Sheep Chase";
+
+    }
+
 }
